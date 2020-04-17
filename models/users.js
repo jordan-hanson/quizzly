@@ -3,8 +3,8 @@ const Schema = mongoose.Schema;
 
 const usersSchema = new Schema(
   {
-    first_name: { type: String, required: true },
-    last_name: { type: String, required: true },
+    firstName: { type: String, required: true },
+    lastName: { type: String, required: true },
     email: { type: String, required: true },
     username: { type: String, required: true },
     password: { type: String, required: true },
@@ -35,5 +35,8 @@ const quizSchema = new Schema(
 const Users = mongoose.model("users", usersSchema);
 const Quiz = mongoose.model("quiz", quizSchema);
 
-module.exports = Users;
-module.exports = Quiz;
+module.exports = {
+  Users,
+  Quiz
+};
+
