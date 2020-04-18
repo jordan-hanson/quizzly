@@ -9,28 +9,17 @@ import Axios from "axios";
 function Users() {
     const [setUsers] = useState([])
     const [formObject, setFormObject] = useState({
-        main: "",
+        // main: "",
         firstName: "",
         lastName: "",
-        userName: "",
+        username: "",
         email: "",
         password: ""
     })
 
-    // useEffect(() => {
-    //     getUsers()
-    // }, [])
-
-    // function getUsers() {
-    //     API.getUsers()
-    //         .then(res =>
-    //             setUsers(res.data)
-    //         )
-    //         .catch(err => console.log(err));
-    // };
     function handleInputChange(event) {
         console.log("we are typing", event.target.value)
-        console.log("qho to update", event.target.name)
+        console.log("who to update", event.target.name)
         const { name, value } = event.target;
         setFormObject({ ...formObject, [event.target.name]: value })
     };
@@ -38,21 +27,18 @@ function Users() {
     function handleFormSubmit(event) {
         event.preventDefault();
         console.log('about to save !!!!')
-        axios.post("http://localhost:8080/api/users/register", formObject).then(function (data) {
-            console.log(data)
-        })
 
-        // if (formObject.first_name && formObject.last_name && formObject.username) {
-        //     API.saveUser({
-        //         first_name: formObject.first_name,
-        //         last_name: formObject.last_name,
-        //         email: formObject.email,
-        //         username: formObject.username,
-        //         password: formObject.password
-        //     })
-        //         .then(res => console.log("response from form", res))
-        //         .catch(err => console.log(err));
-        // }
+        if (formObject.firstName && formObject.lastName) {
+            API.saveUser({
+                firstName: formObject.firstName,
+                lastName: formObject.lastName,
+                email: formObject.email,
+                username: formObject.username,
+                password: formObject.password
+            })
+                .then(res => console.log("response from form", res))
+                .catch(err => console.log(err));
+        }
     };
 
 
@@ -71,12 +57,12 @@ function Users() {
                     <p> LAST NAME:</p>
                     <input name='lastName' onChange={handleInputChange}></input>
                     <p> USER NAME:</p>
-                    <input name='userName' onChange={handleInputChange}></input>
+                    <input name='username' onChange={handleInputChange}></input>
                     <p> EMAIL:</p>
                     <input name='email' onChange={handleInputChange}></input>
                     <p> PASSWORD:</p>
                     <input name='password' onChange={handleInputChange}></input>
-                    <button onClick={handleFormSubmit}>Save Button</button>
+                    <button type="button" onClick={handleFormSubmit}>Save Button</button>
                 </form>
             </Row>
         </Container>

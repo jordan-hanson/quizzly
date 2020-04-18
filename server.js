@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const delegateRoutesFor = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 8080;
+const bodyParser = require("body-parser");
 
 app.use(function (req, res, next) {
 
@@ -24,8 +25,10 @@ app.use(function (req, res, next) {
 });
 
 // Define middleware here
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
+app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
+app.use(bodyParser.json({ limit: "50mb", extended: true }));
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "development") {
   app.use(express.static("client/build"));
