@@ -1,4 +1,4 @@
 module.exports = {
-  Quiz: require("./users"),
-  Users: require("./users"),
+  Quiz: require("./quizResults"),
+  //Users: require("./users"),
 };

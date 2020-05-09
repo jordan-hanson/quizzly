@@ -1,47 +1,88 @@
-# React Router
+# Sample 01 - Logging In and Gated Content
 
-In this activity we will add React Router to the Books application in order to render a book details page as well as a no match 404 page.
+This sample demonstrates:
 
-## Instructions
+- Logging in to Auth0 using Redirect Mode
+- Accessing profile information that has been provided in the ID token
+- Gated content. The `/profile` route is not accessible without having first logged in
 
-* Open the [Unsolved](Unsolved) folder and install dependencies by running `npm install` at the project root.
+## Project setup
 
-* Start the app by running `npm start` from the project root.
+Use `yarn` or `npm` to install the project dependencies:
 
-* Once the app starts open your browser to [localhost:3000](http://localhost:3000).
+```bash
+# Using npm..
+npm install
 
-* Open [App.js](Unsolved/client/src/App.js).
+# Using yarn..
+yarn install
+```
 
-### Part 1
+### Configuration
 
-* Set up React Router inside of the `client/src/App.js` file.
+The project needs to be configured with your Auth0 domain and client ID in order for the authentication flow to work.
 
-  * The `/` and `/books` routes should both render the `Books` component page.
+To do this, first copy `src/auth_config.json.example` into a new file in the same folder called `src/auth_config.json`, and replace the values with your own Auth0 application credentials:
 
-### Part 2
+```json
+{
+  "domain": "{YOUR AUTH0 DOMAIN}",
+  "clientId": "{YOUR AUTH0 CLIENT ID}"
+}
+```
 
-* Notice that inside of the `pages` folder we have a `NoMatch` component. This is the component for our 404 page.
+### Compiles and hot-reloads for development
 
-* Add a route for the new `NoMatch` component. This should only render if no other routes are matched. e.g. `/sjdfhjsdhfjsa` or `/notarealroute/lalala` should both render the `NoMatch` component page. 
+```bash
+npm run start
+```
 
-  * You will need to use the `Switch` component from the React Router Dom library to accomplish this. An example can be found [here](https://reacttraining.com/react-router/web/example/no-match).
+## Deployment
 
-### Part 3
+### Compiles and minifies for production
 
-* Notice that in the `pages` folder we have a `Detail` component. This component displays additional information about a book.
+```bash
+npm run build
+```
 
-* Add a route for the the new `Detail` component. This should render when the `/books/:id` path is matched. e.g. if a book's `_id` is `59a39cf2549cf482c814333f`, then `/books/59a39cf2549cf482c814333f` should render its book `Detail` page.
+### Docker build
 
-* Inside of the `Detail` component, add code so that when the component mounts, we retrieve the book for the rendered route and save it to `book`. e.g. when the route is `/books/59a39cf2549cf482c814333f`, an AJAX request should be made to get the book with an `_id` of `59a39cf2549cf482c814333f`. If completed successfully, you should see the book's synopsis on this page.
+To build and run the Docker image, run `exec.sh`, or `exec.ps1` on Windows.
 
-  * You may need to look into [URL params with React Router](https://reacttraining.com/react-router/web/example/url-params) to accomplish this.
+### Run your tests
 
-### Hints
+```bash
+npm run test
+```
 
-* Parts 1 - 2 will only require you modify the `client/src/App.js` file.
+## Frequently Asked Questions
 
-* The React Router DOM library should already be installed.
+We are compiling a list of questions and answers regarding the new JavaScript SDK - if you're having issues running the sample applications, [check the FAQ](https://github.com/auth0/auth0-spa-js/blob/master/FAQ.md)!
 
-* The React Router documentation is your friend!
+# What is Auth0?
 
-* Ask the instructor or a TA if you're having difficulty understanding any of the activity requirements.
+Auth0 helps you to:
+
+- Add authentication with [multiple authentication sources](https://docs.auth0.com/identityproviders), either social like **Google, Facebook, Microsoft Account, LinkedIn, GitHub, Twitter, Box, Salesforce, among others**, or enterprise identity systems like **Windows Azure AD, Google Apps, Active Directory, ADFS or any SAML Identity Provider**.
+- Add authentication through more traditional **[username/password databases](https://docs.auth0.com/mysql-connection-tutorial)**.
+- Add support for **[linking different user accounts](https://docs.auth0.com/link-accounts)** with the same user.
+- Support for generating signed [Json Web Tokens](https://docs.auth0.com/jwt) to call your APIs and **flow the user identity** securely.
+- Analytics of how, when and where users are logging in.
+- Pull data from other sources and add it to the user profile, through [JavaScript rules](https://docs.auth0.com/rules).
+
+## Create a Free Auth0 Account
+
+1. Go to [Auth0](https://auth0.com/signup) and click Sign Up.
+2. Use Google, GitHub or Microsoft Account to login.
+
+## Issue Reporting
+
+If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
+
+## Author
+
+[Auth0](https://auth0.com)
+
+## License
+
+This project is licensed under the MIT license. See the [LICENSE](../LICENSE) file for more info.

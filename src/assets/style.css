@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* NavBar Style */
+.bgColor {
+    background-color: #EEEBD0!important;
+    
+}
+
+.nav-logo1 {
+    margin-left: 40px;
+}
+
+.hometag {
+    color:#091540;
+    font-size: 25px;
+    margin: auto;
+    font-family: "bangers";
+    text-shadow: 1px 1px #55c4ec;
+}
+
+.hometag:hover {
+    color: #55c4ec!important;
+}
+
+.quizlink2 {
+    color:#091540;
+    font-size: 25px;
+    margin: auto;
+    font-family: "bangers";
+    text-shadow: 1px 1px #55c4ec;
+}
+
+.quizlink2:hover {
+    color: #55c4ec!important;
+}
+
+
+    
+.loginColor {
+    background-color: #091540;
+    border: #091540
+}
+
+.loginSign {
+    color: white;
+    margin: auto;
+}
+
+.loginColor:hover {
+    background-color: #55c4ec;
+}
+
+.QuizLink:hover {
+    color: #55c4ec!important;
+}
+
+
+.bgthis {
+    background-image: url("../assets/bg2.jpg");
+    -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: cover;
+  max-width: 100%!important;
+  padding-bottom: 20px;
+}
+
+.navbar {
+    height: 110px;
+}
+
+
+
+.mb-5 {
+    margin-top: 125px;
+}
+
+/*BODY on Lander Page*/
+.my-5 {
+    color: #6457a6;
+    font-family: "Bangers";  
+    text-shadow: 2px 2px #55c4ec;
+    font-size: 50px; 
+   
+}
+
+.hero {
+    max-width: 750px !important;
+}
+
+
+
+.lead {
+    color: #F03461;
+    font-family: "Bangers";  
+    text-shadow: 2px 2px #091540;
+    font-size: 40px!important;
+    margin: 0 !important;
+}
+
+.mb-4 {
+    color: #6457a6;
+    font-family: "Bangers";  
+    text-shadow: 2px 2px #55c4ec;
+    font-size: 75px;
+}
+
+/*Quiz on landerpage*/
+
+.imageQuiz0a {
+    background-image: url("../assets/aspenG.jpg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+
+.imageQuiz0b {
+    background-image: url("../assets/unicorn3.jpg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+
+.imageQuiz0c {
+    background-image: url("../assets/cat.jpg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+
+.imageQuiz0d {
+    background-image: url("../assets/hashtagB.jpeg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+
+.smallTexta {
+    color: black;
+    font-size: 28px;
+    text-shadow: 1px 1px #55c4ec;
+    text-align: center;
+}
+
+
+
+
+/* Footer Style */
+
+.nav-logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.navbar-brand {
+    margin: 0;
+}
+.bg-light {
+    background-color: #EEEBD0!important;
+    height: 110px!important;
+    padding: 0 !important;
+    min-height: initial !important;
+}
+
+
+
+
+/*Profile page*/
+
+
+
+.lead2 {
+    color: #F03461!important;
+    font-family: "Bangers";  
+    text-shadow: 2px 2px #6457a6;
+    font-size: 55px;
+}
+
+.userInfo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+    color: #55c4ec!important;
+    font-family: "Bangers";  
+    text-shadow: 2px 2px #091540;
+    font-size: 35px;
+}
+
+.mb-5a {
+    margin-top: 100px;
+}
+
+.smallText {
+    font-size: 0.3em;
+}
