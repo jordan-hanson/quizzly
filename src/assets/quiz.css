@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+.Quiz {
+    font-size: 100px;
+}
+
+.quiztitle {
+    text-align: center;
+    color: #091540;
+    font-size: 50px;
+    margin: 0;
+    font-family: "bangers";
+    text-shadow: 2px 2px #55c4ec;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.displayArea {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+      color: white;
+      background: linear-gradient(-45deg, #F03461, #6457a6, #55c4ec);
+      background-size: 200% 200%;
+      -webkit-animation: Gradient 10s ease infinite;
+      -moz-animation: Gradient 10s ease infinite;
+      animation: Gradient 10s ease infinite;
+    padding: 10px;
+    
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    
+}
+
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+.imageQuiz0 {
+    background-image: url("../assets/phillip-larking-KGRXqbMW0q4-unsplash.jpg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+.imageQuiz1 {
+    background-image: url("../assets/daniel-leone-LXQx98FPPQ4-unsplash.jpg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+.imageQuiz2 {
+    background-image: url("../assets/daniel-salcius-RRcYcdGY630-unsplash.jpg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+.imageQuiz3 {
+    background-image: url("../assets/thomas-lefebvre-aRXPJnXQ9lU-unsplash.jpg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+.imageQuiz4 {
+    background-image: url("../assets/ramona-kudure-vOqzskOBmwE-unsplash.jpg");
+    background-size: cover;
+  max-width: 100%!important;
+  height: 100%!important;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+.quizTitles {
+    margin: auto;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px black;
+}
+.quizText0 {
+    color: white;
+    font-family: "Bangers";
+    text-shadow: 2px 2px black;
+}
+.quizText1 {
+    color: white;
+    font-family: "Bangers";  
+    text-shadow: 2px 2px black;
+}
+.quizTitle1 {
+    color: white!important;
+    font-family: "Bangers";
+}
+.quizButton {
+    background-color: black;
+    border-radius: 8px;
+    padding: 3px;
+    text-decoration: none;
+    color: #55c4ec;
+}
+.quizButton:hover {
+    background-color: #b857b2;
+    font-size: 15px;
+    text-decoration: none;
+}
+.noLine {
+    border: 0px transparent;
+}
+.quizTitle {
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "Bangers";
+    letter-spacing: 3px;
+}
+
+.cardS {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boox {
+    width: 250px;
+    margin: 1em;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: 2px solid #55c4ec!important;
+}
+
+.profileSpace {
+    margin-top: 30px;
+}
+.profScoreText {
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+    color: white;
+    font-family: "Bangers";
+    text-shadow: 2px 2px black;
+}
+.profScoreHead {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
+    color: white;
+    font-family: "Bangers";  
+    text-shadow: 2px 2px black;
+}
+
